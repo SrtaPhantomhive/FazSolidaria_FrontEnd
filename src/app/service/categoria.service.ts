@@ -22,23 +22,23 @@ export class CategoriaService {
   }
 
   mostrarCategoriasCadastradas(): Observable<Categoria[]>{
-    return this.http.get<Categoria[]>('http://localhost:8080/categorias')
+    return this.http.get<Categoria[]>(`${environment.url}/categorias`)
   }
 
   buscarIdCategoria(id:number): Observable<Categoria>{
-    return this.http.get<Categoria>(`http://localhost:8080/categorias/buscar-id-categoria/${id}`)
+    return this.http.get<Categoria>(`${environment.url}/categorias/buscar-id-categoria/${id}`)
   }
 
   cadastrarCategoria(categoria:Categoria): Observable<Categoria>{
-    return this.http.post<Categoria>('http://localhost:8080/categorias/cadastrar-categoria', categoria, this.token)
+    return this.http.post<Categoria>(`${environment.url}/categorias/cadastrar-categoria`, categoria, this.token)
   }
 
   atualizarCadastroCategoria(categoria:Categoria): Observable<Categoria>{
-    return this.http.put<Categoria>('http://localhost:8080/categorias/atualizar-categoria',categoria, this.token)
+    return this.http.put<Categoria>(`${environment.url}/categorias/atualizar-categoria`,categoria, this.token)
   }
 
   deletarCategoria(id:number){
-    return this.http.delete(`http://localhost:8080/categorias/deletar-id-categoria/${id}`, this.token)
+    return this.http.delete(`${environment.url}/categorias/deletar-id-categoria/${id}`, this.token)
   }
- 
+
 }
