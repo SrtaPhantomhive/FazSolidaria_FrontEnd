@@ -9,7 +9,7 @@ export const environment = {
   usuario:"",
   categoria: '',
   carrinho: [0],
-  url: "https://fazsolidaria.herokuapp.com/"
+  url: "https://fazsolidaria.herokuapp.com"
 
 };
 
