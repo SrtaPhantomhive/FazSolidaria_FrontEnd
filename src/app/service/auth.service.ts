@@ -27,25 +27,25 @@ export class AuthService {
   // }
 
   buscarIdUsuario(id: number): Observable<Usuario>{
-    return this.http.get<Usuario>(`${environment.url}usuarios/${id}`, {
+    return this.http.get<Usuario>(`${environment.url}/usuarios/${id}`, {
       headers: new HttpHeaders().set('Authorization', environment.token),
     })
   }
 
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
     return this.http.post<UsuarioLogin>(
-      `${environment.url}usuarios/login-usuario`, usuarioLogin);
+      `${environment.url}/usuarios/login-usuario`, usuarioLogin);
   }
 
   cadastrar(usuario: Usuario): Observable<Usuario> {
     return this.http.post<Usuario>(
-      `${environment.url}usuarios/cadastrar-usuario`,
+      `${environment.url}/usuarios/cadastrar-usuario`,
       usuario
     );
   }
 
   atualizarCadastro(usuario:Usuario): Observable<Usuario>{
-    return this.http.put<Usuario>(`${environment.url}usuarios/atualizar-usuario`, usuario,{
+    return this.http.put<Usuario>(`${environment.url}/usuarios/atualizar-usuario`, usuario,{
       headers: new HttpHeaders().set('Authorization', environment.token),
     })
   }
