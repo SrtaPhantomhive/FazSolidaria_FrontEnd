@@ -37,14 +37,17 @@ export class ProdutoService {
   }
 
   cadastrarProduto(produto:Produto): Observable<Produto>{
-    return this.http.post<Produto>(`${environment.url}/produtos/cadastrar-produto`, produto)
+    return this.http.post<Produto>(`${environment.url}/produtos/cadastrar-produto`, produto, {headers: new HttpHeaders().set('Authorization', environment.token)
+  });
   }
 
   atualizarCadastroProduto(produto:Produto): Observable<Produto>{
-    return this.http.post<Produto>(`${environment.url}/produtos/atualizar-produto`, produto, this.token)
+    return this.http.put<Produto>(`${environment.url}/produtos/atualizar-produto`, produto, {headers: new HttpHeaders().set('Authorization', environment.token)
+  });
   }
 
   deletarProduto(id:number){
-    return this.http.delete(`${environment.url}/categorias/deletar-id-categoria/${id}`, this.token)
+    return this.http.delete(`${environment.url}/produtos/deletar-id-produto/${id}`, {headers: new HttpHeaders().set('Authorization', environment.token)
+  });
   }
 }
