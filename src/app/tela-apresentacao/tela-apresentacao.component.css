@@ -13,6 +13,11 @@ body {
     background-color: #FCF2B8;
 }
 
+
+/* RESPONSIVIDADE */
+
+
+
 /* navbar2 */
 .nav2 {
     position: fixed;
@@ -390,8 +395,6 @@ body {
 /* cards certificação */
 @media screen and (max-width:768px) {
     .rootCert>.row {
-        flex-wrap: unset;
+        display: grid;
     }
-
-    .rootCert>.row>.col>.fli {}
 }
