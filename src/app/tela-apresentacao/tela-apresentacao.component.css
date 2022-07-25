@@ -402,3 +402,11 @@ body {
         display: grid;
     }
 }
+
+/* @media screen and (max-width:768px) {
+    .img{
+        width: ;
+        height: ;
+    }
+    
+} */
