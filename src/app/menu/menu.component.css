@@ -13,13 +13,6 @@ body {
     background-color: #FCF2B8;
 }
 
-/* arruma o tamanho da barra de pesquisa em telas menores */
-@media screen and (max-width: 768px) {
-    .resp{
-        width: 200px;
-    }
-}
-
 
 /* navbar2 */
 .nav2 {
