@@ -394,6 +394,10 @@ body {
 /* RESPONSIVIDADE */
 /* cards certificação */
 @media screen and (max-width:768px) {
+    .rootCert {
+        width: 100vw;
+    }
+
     .rootCert>.row {
         display: grid;
     }
