@@ -173,10 +173,6 @@
 }
 
 /*Configurações da fonte - página produtos*/
-.font-produtos {
-  font-family: 'Nunito', cursive;
-  font-size: 18px;
-}
 
 .produtos-preco {
   font-family: 'Nunito', cursive;
@@ -188,7 +184,7 @@
 .produtos-preco strong {
   font-family: 'Nunito', cursive;
   font-weight: bolder;
-  font-size: 30x;
+  font-size: 30px;
 }
 
 
@@ -207,7 +203,7 @@
 /*Configurações da fonte - página produtos*/
 .font-produtos {
   font-family: 'Nunito', cursive;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .produtos-preco {
