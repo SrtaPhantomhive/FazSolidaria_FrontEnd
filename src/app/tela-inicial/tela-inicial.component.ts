@@ -26,13 +26,13 @@ export class TelaInicialComponent implements OnInit {
   ngOnInit() {
     window.scroll(0, 0); // quando minha pagina iniciar coloque no ponto  x e y = 0
 
-    let el = document.createElement('div');
-    document.body.appendChild(el);
+    // let el = document.createElement('div');
+    // document.body.appendChild(el);
 
-    eruda.init({
-      container: el,
-      tool: ['console', 'elements']
-    });
+    // eruda.init({
+    //   container: el,
+    //   tool: ['console', 'elements']
+    // });
 
     // toda vez que a atualiza a pagina ele retorna para a pag de login
     this.mostrarProdutosCadastrados();
