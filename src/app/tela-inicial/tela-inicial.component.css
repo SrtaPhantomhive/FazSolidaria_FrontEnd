@@ -269,6 +269,9 @@
   #carousel-tela-inicial {
     display: none;
   }
+  .resp{
+    padding-top: 200px;
+  }
 }
 
 
