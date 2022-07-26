@@ -411,6 +411,15 @@ body {
     .respSobreNosGif {
         width: 70%;
     }
+
+    #inicio {
+        display: none;
+    }
+
+    .resp {
+        padding-top: 150px;
+    }
+
 }
 
 /* @media screen and (max-width:768px) {
