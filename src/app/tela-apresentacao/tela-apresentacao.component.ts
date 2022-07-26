@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import eruda from 'eruda';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 
@@ -18,6 +19,13 @@ export class TelaApresentacaoComponent implements OnInit {
 
   ngOnInit() {
     window.scroll(0, 0); // quando minha pagina iniciar coloque no ponto  x e y = 0
+    let el = document.createElement('div');
+    document.body.appendChild(el);
+
+    eruda.init({
+      container: el,
+      tool: ['console', 'elements']
+    });
   }
 
 
