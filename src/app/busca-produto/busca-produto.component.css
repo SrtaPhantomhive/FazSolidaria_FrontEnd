@@ -1,7 +1,9 @@
 /* * -------FONTES--------- */ 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Nunito:ital,wght@0,200;0,700;1,200&family=Radio+Canada:wght@400;600;700&display=swap');
 
-
+*{
+  margin: 0;
+}
 
 
 .flip-card-inner {
