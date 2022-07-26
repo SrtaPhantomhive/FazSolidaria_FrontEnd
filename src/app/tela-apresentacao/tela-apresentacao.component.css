@@ -401,6 +401,16 @@ body {
     .rootCert>.row {
         display: grid;
     }
+
+    .respSobreNosDiv {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .respSobreNosGif {
+        width: 70%;
+    }
 }
 
 /* @media screen and (max-width:768px) {
