@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    scroll-behavior: smooth;
     background-color: #FCF2B8;
 }
 
@@ -20,7 +21,9 @@ body {
 
 /* RESPONSIVIDADE */
 
-
+.border{
+    border-radius:0px 0px 25px 25px ;
+}
 
 /* navbar2 */
 .nav2 {
