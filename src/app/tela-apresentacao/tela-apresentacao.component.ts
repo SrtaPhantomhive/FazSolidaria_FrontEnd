@@ -21,33 +21,30 @@ export class TelaApresentacaoComponent implements OnInit {
   }
 
 
-  // carrossel: OwlOptions = {
-  //   loop: false,
-  //   mouseDrag: true,
-  //   touchDrag: true,
-  //   pullDrag: true,
-  //   dots: false,
-  //   navSpeed: 700,
-  //   navText: [
-  //     '<img src="../../assets/img/left-arrow.png">',
-  //     '<img src="../../assets/img/arrow-right.png">    ',
-  //   ],
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     },
-  //     400: {
-  //       items: 2,
-  //     },
-  //     740: {
-  //       items: 3,
-  //     },
-  //     940: {
-  //       items: 5,
-  //     },
-  //   },
-  //   nav: true,
-  // };
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: true
+  }
 
 }
 

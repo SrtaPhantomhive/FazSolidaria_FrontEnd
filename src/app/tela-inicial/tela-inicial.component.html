@@ -1,8 +1,12 @@
 <app-menu-compras></app-menu-compras>
 <div class="container-justify" id="carousel-tela-inicial">
   <div class="row">
-    <!-- carrossel -->
     <div class="col-md-12">
+      <!-- IMAGEM -->
+      <!-- <div class="dimcar d-md-none" style="margin-top: 90px; width:500px ; heigth:500px ;" id="imgInicial">
+        <img src="../../assets/img/PAG1/CARROSSEL/tela1.png" class="d-block w-100" alt="...">
+      </div> -->
+
       <!-- carrossel -->
       <div id="carouselExampleInterval" class="carousel slide dimcar" data-ride="carousel">
         <div class="carousel-inner">
@@ -89,7 +93,8 @@
               <h2>{{ produto.nome }}</h2>
 
               <div style="margin-top: 80px; display: grid;">
-                <button type="button" class="btn btn-light botao" style="width: 160px" (click)="adicionarCarrinho(produto)">
+                <button type="button" class="btn btn-light botao" style="width: 160px"
+                  (click)="adicionarCarrinho(produto)">
                   Adicionar ao Carrinho
                 </button>
                 <button (click)="mostrarProduto(produto)" type="button" class="btn btn-light mt-2 mb-3 btn-cadastro"

@@ -261,20 +261,27 @@
 }
 
 
-@media(max-width: 768px) {
+@media screen and (max-width: 768px) {
   #carousel-tela-inicial {
     display: none;
   }
-  .resp{
+
+  .resp {
     padding-top: 150px;
   }
-  .botao{
+
+  .botao {
     margin-right: 2px;
   }
 }
 
 
+@media(min-width: 768px) {
+  #imgInicial {
+    display: none;
+  }
 
+}
 
 
 

@@ -12,8 +12,10 @@ body {
     background-color: #FCF2B8;
 }
 
-* {
-    margin: 0;
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+    }
 }
 
 /* RESPONSIVIDADE */
@@ -361,6 +363,9 @@ body {
         right: 7.5rem;
         top: .3125rem
     }
+    #imgInicial{
+        display: none;
+    }
 }
 
 /* Alinha o texto */
@@ -423,6 +428,18 @@ body {
         overflow-x: hidden;
     }
 
+    #certificados{
+        display: none;
+    }
+    #missao{
+        display: none;
+    }
+    #sobreNos{
+        display: none;
+    }
+    #equipe{
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
