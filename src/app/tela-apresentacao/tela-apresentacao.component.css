@@ -13,8 +13,7 @@ body {
 }
 
 * {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    margin: 0;
 }
 
 /* RESPONSIVIDADE */
@@ -422,6 +421,17 @@ body {
 
     .teste {
         overflow-x: hidden;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .rootCert1 {
+        width: 100vw;
+    }
+
+    .rootCert1>.row {
+        display: grid;
     }
 
 }

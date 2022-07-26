@@ -4,78 +4,105 @@
 <div class="container-justify" id="inicio">
     <div class="row">
         <!-- carrossel -->
-        <div class="col-md-12">
-            <!-- carrossel -->
-            <div id="carouselExampleInterval" class="carousel slide dimcar" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" style="opacity: 90%;" data-interval="5000">
-                        <img src="../../assets/img/PAG1/CARROSSEL/tela1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="fundoCaixa corTextoCarrossel">
-                                <h5 class="fonteTituloTxt">O futuro é verde, e se faz junto!</h5>
-                                <a routerLink="/catalogo"><button type="button"
-                                        class="btn text-light btn-lg mt-1 navbackground2 bg-btn mb-3"
-                                        style="border:0ch;">Conheça Nossa Loja!</button></a>
+        <!-- <div class="col-md-12">
+            <owl-carousel-o [options]="carrossel">
+                <ng-template carouselSlide *ngFor="let produto of carrossel.slice(20, 30)">
+                    <div class="p-1 flip-card">
+                        <div class="card mb-2 mr-3 flip-card-inner">
+                            <img class="card-img-top" [src]="produto.imagem" alt="{{ produto.categoria }} "
+                                style="border-radius: 20px" />
+                            <div class="card-body">
+                                <h4 class="card-title font-produtos">{{ produto.nome }}</h4>
+                                <div class="produtos-stars">
+                                    <img src="../../assets/img/stars.jpg" class="mx-auto d-block"
+                                        style="width: 100px" />
+                                </div><strong class="produtos-preco">R$ {{ produto.preco }}</strong>
+                            </div>
+                            <div class="card flip-card-back align align-items-center">
+                                
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item" data-interval="5000">
-                        <img src="../../assets/img/PAG1/CARROSSEL/doações.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="fundoCaixa corTextoCarrossel">
-                                <h5 class="fonteTituloTxt">Compra = Doação</h5>
-                                <p class="fonteTxt" style="font-size: 20px;  font-weight: bolder;">A cada compra
-                                    efetuada em nossa loja, uma porcentagem do valor é diretamente direcionada à compra
-                                    de cestas básicas para famílias carentes!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" style="opacity: 90%;" data-interval="5000">
-                        <img src="../../assets/img/PAG1/CARROSSEL/veganoOrganico.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="fundoCaixa corTextoCarrossel">
-                                <h5 class="fonteTituloTxt">Zero Crueldade Animal</h5>
-                                <p class="fonteTxt" style="font-size: 20px;  font-weight: bolder;">Todos os nossos
-                                    produtos são veganos! Além de adotarmos um sistema de produção em que não
-                                    utilizamos NADA de origem animal.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" style="opacity: 90%;" data-interval="5000">
-                        <img src="../../assets/img/PAG1/CARROSSEL/doação.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="fundoCaixa corTextoCarrossel">
-                                <h5 class="fonteTituloTxt">Frete Grátis</h5>
-                                <p class="fonteTxt" style="font-size: 20px;  font-weight: bolder;">Nosso meio de entrega
-                                    possibilita acesso à toda cidade de São Paulo, atualmente contamos com frete grátis
-                                    para toda região!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" style="opacity: 90%;" data-interval="5000">
-                        <img src="../../assets/img/PAG1/CARROSSEL/inverno.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="fundoCaixa corTextoCarrossel">
-                                <h5 class="fonteTituloTxt">Frutos da Época</h5>
-                                <p class="fonteTxt" style="font-size: 20px;  font-weight: bolder;">Respeitando a
-                                    sazonalidade de nossos frutos... Bem-Vindos às vendas de Inverno!!! </p>
-                            </div>
+                    </div> -->
+        <!-- </div> -->
+        <!-- </ng-template>
+            </owl-carousel-o>
+        -->
+
+
+
+
+
+        <!-- carrossel -->
+        <div id="carouselExampleInterval" class="carousel slide dimcar" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="opacity: 90%;" data-interval="5000">
+                    <img src="../../assets/img/PAG1/CARROSSEL/tela1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="fundoCaixa corTextoCarrossel">
+                            <h5 class="fonteTituloTxt">O futuro é verde, e se faz junto!</h5>
+                            <a routerLink="/catalogo"><button type="button"
+                                    class="btn text-light btn-lg mt-1 navbackground2 bg-btn mb-3"
+                                    style="border:0ch;">Conheça Nossa Loja!</button></a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval"
-                    data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval"
-                    data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="../../assets/img/PAG1/CARROSSEL/doações.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="fundoCaixa corTextoCarrossel">
+                            <h5 class="fonteTituloTxt">Compra = Doação</h5>
+                            <p class="fonteTxt" style="font-size: 20px;  font-weight: bolder;">A cada compra
+                                efetuada em nossa loja, uma porcentagem do valor é diretamente direcionada à compra
+                                de cestas básicas para famílias carentes!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="opacity: 90%;" data-interval="5000">
+                    <img src="../../assets/img/PAG1/CARROSSEL/veganoOrganico.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="fundoCaixa corTextoCarrossel">
+                            <h5 class="fonteTituloTxt">Zero Crueldade Animal</h5>
+                            <p class="fonteTxt" style="font-size: 20px;  font-weight: bolder;">Todos os nossos
+                                produtos são veganos! Além de adotarmos um sistema de produção em que não
+                                utilizamos NADA de origem animal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="opacity: 90%;" data-interval="5000">
+                    <img src="../../assets/img/PAG1/CARROSSEL/doação.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="fundoCaixa corTextoCarrossel">
+                            <h5 class="fonteTituloTxt">Frete Grátis</h5>
+                            <p class="fonteTxt" style="font-size: 20px;  font-weight: bolder;">Nosso meio de entrega
+                                possibilita acesso à toda cidade de São Paulo, atualmente contamos com frete grátis
+                                para toda região!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="opacity: 90%;" data-interval="5000">
+                    <img src="../../assets/img/PAG1/CARROSSEL/inverno.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="fundoCaixa corTextoCarrossel">
+                            <h5 class="fonteTituloTxt">Frutos da Época</h5>
+                            <p class="fonteTxt" style="font-size: 20px;  font-weight: bolder;">Respeitando a
+                                sazonalidade de nossos frutos... Bem-Vindos às vendas de Inverno!!! </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Carrossel fim -->
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
+        <!-- Carrossel fim -->
     </div>
 </div>
+
 
 
 <!-- PÁGINA 2 CERTIFICADOS -->
@@ -520,7 +547,7 @@
             </div>
         </div>
         <!-- certificados Cards -->
-        <div class="container-fluid mb-5 mt-2 alinhamentoImg rootCert">
+        <div class="container-fluid mb-5 mt-2 alinhamentoImg rootCert1">
             <div class="row">
                 <!-- Rafaela -->
                 <div class="col">
