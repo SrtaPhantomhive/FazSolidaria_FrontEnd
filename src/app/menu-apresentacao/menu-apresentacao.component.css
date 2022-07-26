@@ -48,6 +48,12 @@ body {
     opacity: 40%;
 }
 
+@media screen and (max-width: 768px) {
+    .resp {
+        display: none !important;
+    }
+}
+
 
 /* ---------CONFIG. NAVBARS-------- */
 /* alinha as navbars */
