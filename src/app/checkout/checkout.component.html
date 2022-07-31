@@ -137,7 +137,7 @@
           <label class="d-md-none">Preço</label> {{ produto.preco | currency: 'BRL'}}
         </div>
         <div class="col-12 col-md-2 d-flex d-md-block justify-content-between align-items-center  p-2  text-center">
-           <h5>{{produto.qtd}}</h5>
+          <label class="d-md-none ">Qtd</label> {{produto.qtd}}  
         </div>
         <div class="col-12 col-md-3 d-flex d-md-block justify-content-between align-items-center  p-2  text-center">
           <label class="d-md-none">Sub-total</label> {{ calculaSubTotal(produto.preco,produto.qtd) | currency: 'BRL'}}
