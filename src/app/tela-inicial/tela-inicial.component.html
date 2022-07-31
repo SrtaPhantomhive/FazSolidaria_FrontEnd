@@ -87,7 +87,7 @@
               <h4 class="card-title font-produtos mt-2">{{ produto.nome }}</h4>
               <div class="produtos-stars">
                 <img src="../../assets/img/stars.jpg" class="mx-auto d-block" style="width: 100px" />
-              </div><strong class="produtos-preco">R$ {{ produto.preco }}</strong>
+              </div><strong class="produtos-preco"> {{ produto.preco | currency: 'BRL'}}</strong>
             </div>
             <div class="card flip-card-back align align-items-center">
               <h2>{{ produto.nome }}</h2>
@@ -123,7 +123,7 @@
               <div class="produtos-stars">
                 <img src="../../assets/img/stars.jpg" class="mx-auto d-block" style="width: 100px" />
               </div>
-              <strong class="produtos-preco">R$ {{ produto.preco }}</strong>
+              <strong class="produtos-preco"> {{ produto.preco | currency: 'BRL' }}</strong>
             </div>
             <div class="card flip-card-back align align-items-center">
               <h2>{{ produto.nome }}</h2>
@@ -155,7 +155,7 @@
               <h4 class="card-title font-produtos">{{ produto.nome }}</h4>
               <div class="produtos-stars">
                 <img src="../../assets/img/stars.jpg" class="mx-auto d-block" style="width: 100px" />
-              </div><strong class="produtos-preco">R$ {{ produto.preco }}</strong>
+              </div><strong class="produtos-preco"> {{ produto.preco | currency: 'BRL' }}</strong>
             </div>
             <div class="card flip-card-back align align-items-center">
               <h2>{{ produto.nome }}</h2>

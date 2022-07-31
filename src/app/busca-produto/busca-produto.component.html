@@ -17,7 +17,7 @@
           <div class="produtos-stars">
             <img src="../../assets/img/stars.jpg" class="mx-auto d-block" style="width: 100px" />
           </div>
-          <strong class="produtos-preco">R$ {{ item.preco }}</strong>
+          <strong class="produtos-preco">R$ {{ item.preco | currency: 'BRL'}}</strong>
         </div>
         <div class="card flip-card-back align align-items-center">
           <h2>{{ item.nome }}</h2>
