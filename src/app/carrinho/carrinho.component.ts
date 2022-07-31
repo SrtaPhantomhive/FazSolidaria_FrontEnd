@@ -18,7 +18,7 @@ export class CarrinhoComponent implements OnInit {
   idUsuario = environment.id;
 
   itensCarrinho: ItensCarrinho[] = [];
-  precoTotal: number = 0;
+  precoTotal: any = 0;
   quantidadeTotal: number = 0;
 
   constructor(
@@ -33,12 +33,17 @@ export class CarrinhoComponent implements OnInit {
 
     this.idUsuario = environment.id;
     this.buscarIdUsuario(this.idUsuario);
+   
   }
   calculaSubTotal = (preco: any, qtd: any) => {
     if (preco && qtd) {
-      return preco * qtd;
+      const subPreco = (preco * qtd);
+      //const subPrecoFormatado = subPreco.toFixed(2); 
+      const subPrecoFormatado = subPreco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+      return subPrecoFormatado;
     }
     return 0.0;
+
   };
 
   buscarIdUsuario(id: number) {
@@ -53,7 +58,8 @@ export class CarrinhoComponent implements OnInit {
 
     // pega o preço total e armazena 
     this.carrinhoService.precoTotal.subscribe(
-      data => this.precoTotal = data
+      data => this.precoTotal = data,
+      
     );
 
     // pega a quantidade do carrinho e armazena

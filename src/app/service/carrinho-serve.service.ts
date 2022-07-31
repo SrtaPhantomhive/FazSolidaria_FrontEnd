@@ -11,7 +11,9 @@ export class CarrinhoServeService {
   precoTotal: Subject<number> = new BehaviorSubject<number>(0);
   quantidadeTotal: Subject<number> = new BehaviorSubject<number>(0);
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
   adicionarAoCarrinho(itemCarrinho: ItensCarrinho) {
     // Verificar se ja existe o item no carrinho
@@ -42,12 +44,14 @@ export class CarrinhoServeService {
     let valorTotalQuantidade: number = 0;
 
     for (let tempCartItem of this.itensCarrinho) {
-      valorTotalPreco += tempCartItem.qtd * tempCartItem.preco;
+      valorTotalPreco += tempCartItem.qtd * tempCartItem.preco
+    //  valorTotalPreco.toFixed(2).replace(".", ",");
       valorTotalQuantidade += tempCartItem.qtd;
     }
 
     // mostra os novos valores para o usuario
     this.precoTotal.next(valorTotalPreco);
+  
     this.quantidadeTotal.next(valorTotalQuantidade);
 
     // registre os dados do carrinho apenas para fins de depuração

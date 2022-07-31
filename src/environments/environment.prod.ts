@@ -1,5 +1,5 @@
 export const environment = {
-  production: true,
+  production: false,
   token: "",
   nome: "",
   id: 0,
