@@ -56,7 +56,7 @@ export class CheckoutComponent implements OnInit {
       Swal.fire(
         {
           title: 'Faça o login!',
-          text: 'Você precisa estar logado para finalizar a compra!',
+          text: 'Você precisa estar logado ou cadastrado para finalizar a compra!',
           icon: 'info',
           showConfirmButton: true,
           confirmButtonText: 'Ok',
